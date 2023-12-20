@@ -1,0 +1,117 @@
+/* Global style */
+/* Colors */
+:root {
+    --green: #198754;
+    --black7 : rgba(0,0,0,.7);
+    --black2 : rgba(0,0,0,.2);
+    --yellow : #FFFF00;
+    --agreen : #8dc0bb;
+} 
+
+/* Tags */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial', 'sans-serif';
+}
+
+a {
+  color: #ffffff;
+  transition: ease 1s;
+}
+
+a:hover, a:focus {
+  color: var (--yellow);
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/* Custom CSS Override*/
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid var(--black2);
+    -webkit-box-shadow: 0px 3px 30px 0px var(--black2);
+    -moz-box-shadow: 0px 3px 30px 0px var(--black2);
+    box-shadow: 0px 3px 30px 0px var(--black2);
+}
+
+/* Featured */
+.hero {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: url(../images/bg.jpg);
+}
+
+.btn-primary{
+    background-color: var(--green);
+    border-color:#fff;
+    transition: ease .5s;
+}
+
+.btn-primary:hover{
+    background-color: var(--black7);
+    border-color:#fff;
+}
+
+/* Portfolio */
+.content {
+    padding:50px;
+    text-align: center;
+}
+
+.card {
+    margin:0 auto;
+}
+
+.content .header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* About Me */
+#aboutme {
+    background-color: var(--agreen);
+    color:#fff;
+    -webkit-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.1);
+}
+
+/* Contact Me */
+#contact .btn-outline-primary {
+    border:1px solid var(--agreen)
+}
+#contact .btn-outline-primary a {
+    color:var(--black7);
+    font-weight: 600;
+}
+#contact .btn-outline-primary:hover a {
+    color:#fff;
+}
+#contact .btn-outline-primary:hover {
+    background-color:var(--green);
+}
