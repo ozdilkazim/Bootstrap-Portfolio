@@ -6,8 +6,8 @@
     --black2 : rgba(0,0,0,.2);
     --yellow : #FFFF00;
     --agreen : #8dc0bb;
+    --white : rgba(255,255,255,1);
 } 
-
 /* Tags */
 html,
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+  color: var (--white)
   transition: ease 1s;
 }
 
@@ -61,19 +61,19 @@ p {
     width: 100%;
     padding-top: 150px;
     padding-bottom: 100px;
-    color: white;
+    color: var (--white);
     background: url(../images/bg.jpg);
 }
 
 .btn-primary{
     background-color: var(--green);
-    border-color:#fff;
+    border-color:var (--white);
     transition: ease .5s;
 }
 
 .btn-primary:hover{
     background-color: var(--black7);
-    border-color:#fff;
+    border-color:var (--white);
 }
 
 /* Portfolio */
@@ -95,7 +95,7 @@ p {
 /* About Me */
 #aboutme {
     background-color: var(--agreen);
-    color:#fff;
+    color:var (--white);
     -webkit-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.1);
     box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.1);
@@ -110,7 +110,7 @@ p {
     font-weight: 600;
 }
 #contact .btn-outline-primary:hover a {
-    color:#fff;
+    color:var (--white);
 }
 #contact .btn-outline-primary:hover {
     background-color:var(--green);
